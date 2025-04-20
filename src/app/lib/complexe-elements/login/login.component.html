@@ -1,0 +1,54 @@
+<app-icon
+  name="logo-no-background"
+  fileExtension="png"
+  [width]="120"
+  [height]="120"
+></app-icon>
+<div class="card-login-form">
+  @if (showError) {
+    <app-error-card class="error-message">
+      <span class="error-span">
+        Mauvais identifiant ou mot de passe
+        <sl-icon-button
+          (click)="removeError()"
+          name="x-lg"
+          style="color: white"
+        ></sl-icon-button>
+      </span>
+    </app-error-card>
+  }
+  <app-card>
+    <div slot="header" style="color: white">Se connecter sur IAD Boost</div>
+    <form
+      [formGroup]="loginForm"
+      class="form-login"
+      (keydown.enter)="onSubmit()"
+    >
+      <app-input
+        formControlName="email"
+        label="Email"
+        [clearable]="true"
+        [required]="true"
+        type="email"
+        placeHolder="exemple@exemple.com"
+      ></app-input>
+      <app-input
+        formControlName="password"
+        label="Mot de passe"
+        [clearable]="false"
+        [passwordToggle]="true"
+        [required]="true"
+        type="password"
+      ></app-input>
+      <app-button
+        class="login-button"
+        [label]="'Se connecter'"
+        [variant]="'success'"
+        [size]="'large'"
+        [disabled]="loginForm.invalid"
+        [loading]="isLoading"
+        (click)="onSubmit()"
+      ></app-button>
+    </form>
+  </app-card>
+</div>

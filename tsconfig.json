@@ -3,6 +3,16 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/app/*"],
+      "@types": ["src/app/types"],
+      "types/*": ["src/app/types/*"],
+      "@services": ["src/app/services"],
+      "@services/*": ["src/app/services/*"],
+      "@elements": ["src/app/lib/basic-elements"],
+      "@elements/*": ["src/app/lib/basic-elements/*"],
+      "@full-component/*": ["src/app/lib/complexe-elements/*"],
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

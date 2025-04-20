@@ -1,0 +1,16 @@
+<sl-button
+  [disabled]="disabled"
+  [outline]="outline"
+  [variant]="variant"
+  [size]="size"
+  [loading]="loading"
+  style="width: 100%"
+>
+  @if (prefix) {
+    <sl-icon [name]="prefix" [slot]="'prefix'"></sl-icon>
+  }
+  @if (suffix) {
+    <sl-icon [name]="suffix" [slot]="'suffix'"></sl-icon>
+  }
+  <span>{{ label }}</span>
+</sl-button>

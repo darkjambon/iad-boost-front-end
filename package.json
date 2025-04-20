@@ -6,6 +6,7 @@
     "node": ">=18.19.1"
   },
   "scripts": {
+    "vercel:dev": "vercel dev",
     "ng": "ng",
     "dev": "ng serve",
     "start": "npm run dev",
@@ -21,11 +22,14 @@
     "@angular/common": "^19.0.0",
     "@angular/compiler": "^19.0.0",
     "@angular/core": "^19.0.0",
+    "@angular/fire": "^19.1.0",
     "@angular/forms": "^19.0.0",
     "@angular/platform-browser": "^19.0.0",
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/platform-server": "^19.0.0",
     "@angular/router": "^19.0.0",
+    "@shoelace-style/shoelace": "^2.20.1",
+    "firebase": "^11.6.0",
     "front-matter": "^4.0.2",
     "marked": "^15.0.7",
     "marked-gfm-heading-id": "^4.1.1",
@@ -33,7 +37,8 @@
     "marked-mangle": "^1.1.10",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "vercel": "^41.6.1"
   },
   "devDependencies": {
     "@analogjs/platform": "^1.15.1",

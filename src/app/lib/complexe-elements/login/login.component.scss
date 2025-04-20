@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.error-span {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-login-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.form-login {
+  width: 300px;
+}
+
+.login-button {
+  margin-top: 20px;
+  width: 100%;
+  display: block;
+}
+
+.form-login app-input {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form-login app-input:last-child {
+  margin-bottom: 0;
+}

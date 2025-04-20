@@ -1,0 +1,7 @@
+sl-card::part(base) {
+  background-color: #533A58 !important;
+}
+
+sl-card {
+  --border-color: #f3bae0
+}

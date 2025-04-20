@@ -6,11 +6,12 @@ import {
 import {ApplicationConfig, provideExperimentalZonelessChangeDetection, provideZoneChangeDetection} from '@angular/core';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideFileRouter, requestContextInterceptor } from '@analogjs/router';
+import { withComponentInputBinding } from '@angular/router';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideExperimentalZonelessChangeDetection(),
-    provideFileRouter(),
+    provideFileRouter(withComponentInputBinding()),
     provideHttpClient(
       withFetch(),
       withInterceptors([requestContextInterceptor])

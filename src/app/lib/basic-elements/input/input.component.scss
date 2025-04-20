@@ -1,0 +1,17 @@
+.iad-input::part(form-control-label) {
+  color: white;
+}
+
+.iad-input::part(base) {
+  background-color: #31283a;
+  border-color: #f3bae0;
+  box-shadow: 0 0 0 0;
+}
+
+.iad-input::part(input) {
+  color: white;
+}
+
+.iad-input::part(form-control-input) {
+  width: var(--input-width, 100%);
+}
