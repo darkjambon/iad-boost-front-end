@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
-import {LoginComponent} from "@full-component/login/login.component";
+import {RouteMeta} from "@analogjs/router";
 
-@Component({
-  standalone: true,
-  imports: [
-    LoginComponent
-  ],
-  template: `<app-login></app-login>`,
-})
-export default class ProductsComponent {}
+export const routeMeta: RouteMeta = {
+  redirectTo: '/c/visit-proof',
+  pathMatch: 'full'
+};

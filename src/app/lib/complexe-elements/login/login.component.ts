@@ -18,7 +18,7 @@ import {
 } from '@angular/forms';
 import { CardComponent } from '@elements/card/card.component';
 import { ButtonComponent } from '@elements/button/button.component';
-import { AuthService } from '@services/auth.service';
+import { AuthService } from '@services/auth/auth.service';
 import { ErrorCardComponent } from '@elements/error-card/error-card.component';
 
 @Component({

@@ -1,14 +1,16 @@
-<sl-input
-  class="iad-input"
-  [label]="label"
-  [placeholder]="placeHolder"
-  [required]="required"
-  [type]="type"
-  [size]="size"
-  [disabled]="disabled"
-  [clearable]="clearable"
-  [passwordToggle]="passwordToggle"
-  [value]="value"
-  (sl-input)="handleInput($event)"
-  (sl-blur)="onTouched()"
-></sl-input>
+<div class="sl-theme-dark">
+  <sl-input
+    class="iad-input"
+    [label]="label"
+    [placeholder]="placeHolder"
+    [required]="required"
+    [type]="type"
+    [size]="size"
+    [disabled]="disabled"
+    [clearable]="clearable"
+    [passwordToggle]="passwordToggle"
+    [value]="value"
+    (sl-input)="handleInput($event)"
+    (sl-blur)="onTouched()"
+  ></sl-input>
+</div>

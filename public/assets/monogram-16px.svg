@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16" height="16" data-version="2">
+    <path fill="#fff" d="M9.08 11.93V4.08h.91v7.85Z" paint-order="stroke"/>
+    <rect width=".91" height="7.85" x="-.455" y="-3.925" fill="none" rx="0" ry="0" transform="translate(10.035 8.505)"/>
+    <path fill="#fff" d="M11.04 4.08h2.22q1.47 0 2.21.44.75.44.75 1.5 0 .45-.18.82-.17.36-.51.59-.33.24-.82.33v.06q.52.08.91.29.4.22.63.6.22.39.22.99 0 .72-.33 1.22-.34.5-.95.76-.61.25-1.45.25h-2.7Zm.91 3.37h1.5q1.03 0 1.43-.34.39-.34.39-.99 0-.67-.47-.97-.47-.29-1.5-.29h-1.35Zm0 .76v2.94h1.63q1.05 0 1.49-.41.43-.41.43-1.11 0-.44-.19-.76-.2-.32-.64-.49-.44-.17-1.17-.17Z" paint-order="stroke"/>
+    <rect width="5.43" height="7.85" x="-2.715" y="-3.925" fill="none" rx="0" ry="0" transform="translate(14.255 8.505)"/>
+</svg>

@@ -10,6 +10,7 @@
 
 .iad-input::part(input) {
   color: white;
+  //-webkit-text-fill-color: white;
 }
 
 .iad-input::part(form-control-input) {

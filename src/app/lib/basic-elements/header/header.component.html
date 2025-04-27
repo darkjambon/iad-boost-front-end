@@ -1,3 +1,12 @@
 <div class="header">
   <app-icon [height]="60" [width]="60" fileExtension="png" name="monogram-hq"></app-icon>
+  <app-button
+    [label]="'Log out'"
+    [variant]="'warning'"
+    [size]="'large'"
+    [outline]="true"
+    [pill]="true"
+    (click)="logout()"
+  >
+  </app-button>
 </div>

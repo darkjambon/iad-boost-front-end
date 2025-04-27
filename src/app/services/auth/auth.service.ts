@@ -2,8 +2,6 @@ import { Injectable, inject, signal } from '@angular/core';
 import {
   Auth,
   signInWithEmailAndPassword,
-  signInWithPopup,
-  GoogleAuthProvider,
   signOut,
   user,
 } from '@angular/fire/auth';
@@ -15,16 +13,16 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AuthService {
-  private auth = inject(Auth);
+  public auth = inject(Auth);
   private router = inject(Router);
-  private isConnected = signal<boolean>(false);
   private isLoading = signal<boolean>(false);
+  private isConnected = signal<boolean>(false);
   private userCredentials = toSignal(
     user(this.auth).pipe(
       map(user => {
         console.log('jambon pipe', user);
         this.isConnected.set(!!user);
-        return user;
+        return {state: 'loaded', user};
       })
     ),
     { initialValue: null }
@@ -47,7 +45,7 @@ export class AuthService {
   async logout() {
     try {
       await signOut(this.auth);
-      this.router.navigate(['/login']);
+      await this.router.navigate(['/login']);
     } catch (error) {
       console.error('Erreur de déconnexion:', error);
       throw error;
@@ -60,6 +58,10 @@ export class AuthService {
 
   get isUserConnected() {
     return this.isConnected();
+  }
+
+  get userID() {
+    return this.userCredentials()?.user?.uid;
   }
 
   get isLoginLoading() {

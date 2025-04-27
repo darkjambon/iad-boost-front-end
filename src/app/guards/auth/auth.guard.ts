@@ -1,6 +1,6 @@
 import { CanActivateFn, Router } from '@angular/router';
 import { inject } from '@angular/core';
-import { AuthService } from '@services/auth.service';
+import { AuthService } from '@services/auth/auth.service';
 
 export const authGuard: CanActivateFn = async (route, state) => {
   const router = inject(Router);
@@ -10,7 +10,7 @@ export const authGuard: CanActivateFn = async (route, state) => {
       const credential = authService.currentUserCredential;
       if (credential !== null) {
         clearInterval(interval);
-        resolve(credential);
+        resolve(credential.user);
       }
     }, 50);
   });

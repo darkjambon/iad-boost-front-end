@@ -6,7 +6,7 @@
     "paths": {
       "@/*": ["src/app/*"],
       "@types": ["src/app/types"],
-      "types/*": ["src/app/types/*"],
+      "@guards/*": ["src/app/guards/*"],
       "@services": ["src/app/services"],
       "@services/*": ["src/app/services/*"],
       "@elements": ["src/app/lib/basic-elements"],

@@ -18,10 +18,12 @@ import { NullableString } from '@types';
 })
 export class ButtonComponent {
   @Input() variant: string = 'default';
-  @Input() outline: NullableString = null;
+  @Input() outline: boolean = false;
   @Input() size: string = 'default';
   @Input() prefix: NullableString = null;
   @Input() suffix: NullableString = null;
+  @Input() pill: boolean = false;
+  @Input() caret: boolean = false;
   @Input()
   set loading(value: boolean) {
     this._loading.set(value);

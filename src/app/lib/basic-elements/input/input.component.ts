@@ -7,7 +7,6 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import '@shoelace-style/shoelace/dist/components/input/input.js';
 import { NullableString } from '@types';
 import { ReactiveFormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 
