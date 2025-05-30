@@ -2,6 +2,7 @@
 
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
+import ClosePlugin from './vite-plugin-close'
 import path from 'path';
 
 export default defineConfig(({ mode }) => ({
@@ -25,12 +26,16 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     analog({
-      ssr: false,
+      ssr: true,
       static: true,
       prerender: {
         routes: [],
       },
       vite: { experimental: { supportAnalogFormat: true } },
+      nitro: {
+        preset: 'vercel',
+      },
     }),
+    ClosePlugin(),
   ],
 }));
