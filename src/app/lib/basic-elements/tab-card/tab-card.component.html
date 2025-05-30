@@ -1,0 +1,11 @@
+<sl-details
+  [summary]="`${property().name} ${visits().length} visite${visits().length > 1 ? 's' : ''}`"
+>
+  <app-button
+    label="Créer une visite"
+    ></app-button>
+  @for(visit of visits(); track visit) {
+    {{visit.visitDate | firebaseTimeStamp}}
+  }
+
+</sl-details>

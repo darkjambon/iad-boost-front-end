@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {LoginComponent} from "@full-component/login/login.component";
-import {AuthService} from "@services/auth/auth.service";
-import {RouteMeta} from "@analogjs/router";
+import { LoginComponent } from '@full-component/login/login.component';
+import { AuthService } from '@services/auth/auth.service';
+import { RouteMeta } from '@analogjs/router';
 
 export const routeMeta: RouteMeta = {
   canActivate: [() => true],
@@ -10,9 +10,7 @@ export const routeMeta: RouteMeta = {
 
 @Component({
   standalone: true,
-  imports: [
-    LoginComponent
-  ],
+  imports: [LoginComponent],
   template: `<app-login></app-login>`,
 })
 export default class ProductsComponent {}

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VisitProofComponent } from './visit-proof.component';
+import { TabCardComponent } from './tab-card.component';
 
-describe('VisitProofComponent', () => {
-  let component: VisitProofComponent;
-  let fixture: ComponentFixture<VisitProofComponent>;
+describe('TabCardComponent', () => {
+  let component: TabCardComponent;
+  let fixture: ComponentFixture<TabCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VisitProofComponent],
+      imports: [TabCardComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(VisitProofComponent);
+    fixture = TestBed.createComponent(TabCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -14,9 +14,13 @@ export default defineConfig(({ mode }) => ({
       '@': path.resolve(__dirname, 'src/app'),
       '@types': path.resolve(__dirname, 'src/app/types'),
       '@elements': path.resolve(__dirname, 'src/app/lib/basic-elements'),
-      '@full-component': path.resolve(__dirname, 'src/app/lib/complexe-elements'),
+      '@full-component': path.resolve(
+        __dirname,
+        'src/app/lib/complexe-elements'
+      ),
       '@services': path.resolve(__dirname, 'src/app/services'),
       '@guards': path.resolve(__dirname, 'src/app/guards'),
+      '@models': path.resolve(__dirname, 'src/app/models'),
     },
   },
   plugins: [

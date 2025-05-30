@@ -19,10 +19,10 @@ export class AuthService {
   private isConnected = signal<boolean>(false);
   private userCredentials = toSignal(
     user(this.auth).pipe(
-      map(user => {
+      map((user) => {
         console.log('jambon pipe', user);
         this.isConnected.set(!!user);
-        return {state: 'loaded', user};
+        return { state: 'loaded', user };
       })
     ),
     { initialValue: null }

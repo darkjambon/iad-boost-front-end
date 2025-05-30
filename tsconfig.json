@@ -12,6 +12,7 @@
       "@elements": ["src/app/lib/basic-elements"],
       "@elements/*": ["src/app/lib/basic-elements/*"],
       "@full-component/*": ["src/app/lib/complexe-elements/*"],
+      "@models/*": ["src/app/models/*"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

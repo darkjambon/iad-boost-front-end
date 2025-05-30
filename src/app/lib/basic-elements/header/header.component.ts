@@ -1,7 +1,7 @@
-import {Component, inject} from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { IconComponent } from '@elements/icon/icon.component';
-import {ButtonComponent} from "@elements/button/button.component";
-import {AuthService} from "@services/auth/auth.service";
+import { ButtonComponent } from '@elements/button/button.component';
+import { AuthService } from '@services/auth/auth.service';
 
 @Component({
   selector: 'app-header',

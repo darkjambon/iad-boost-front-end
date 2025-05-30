@@ -1,7 +1,7 @@
 sl-card::part(base) {
-  background-color: #1B2B40 !important;
+  background-color: #1b2b40 !important;
 }
 
 sl-card {
-  --border-color: #BF6F8C
+  --border-color: #bf6f8c;
 }

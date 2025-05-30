@@ -1,9 +1,9 @@
 sl-card::part(base) {
-  background-color: #50353F;
+  background-color: #50353f;
 }
 
 sl-card {
-  --border-color: #A5375D;
+  --border-color: #a5375d;
 }
 
 sl-card::part(body) {

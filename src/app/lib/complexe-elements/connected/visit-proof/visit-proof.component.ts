@@ -1,17 +1,25 @@
-import { RealEstateService } from '@services/firestore/real-estate.service';
-import {Component, inject, OnInit} from '@angular/core';
+import { Component, effect, inject, OnInit } from '@angular/core';
+import { TabCardComponent } from '@elements/tab-card/tab-card.component';
+import { PropertyStoreService } from '@services/stores/property-store/property-store.service';
 
 @Component({
   selector: 'app-visit-proof',
-  imports: [],
+  imports: [TabCardComponent],
   templateUrl: './visit-proof.component.html',
-  styleUrl: './visit-proof.component.css'
+  styleUrl: './visit-proof.component.css',
 })
 export class VisitProofComponent implements OnInit {
-  realEstate = inject(RealEstateService);
+  propertyStore = inject(PropertyStoreService);
 
-  ngOnInit(): void {
-    console.log('VisitProofComponent initialized');
+  properties = this.propertyStore.properties;
+
+  constructor() {
+    effect(() => {
+      console.log('Properties changed:', this.properties());
+    });
   }
 
+  ngOnInit(): void {
+    console.log('VisitProofComponent initialized', this.properties());
+  }
 }

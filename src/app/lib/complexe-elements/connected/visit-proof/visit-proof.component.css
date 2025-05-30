@@ -1,0 +1,12 @@
+.property-card {
+  width: 70%;
+  margin-bottom: 16px;
+  display: block;
+}
+
+:host {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

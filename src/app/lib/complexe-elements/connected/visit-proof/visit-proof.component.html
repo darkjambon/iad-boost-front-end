@@ -1,1 +1,5 @@
-<p>visit-proof works!</p>
+@if (!propertyStore.loadingComputed()) {
+  @for (property of properties(); track property) {
+    <app-tab-card class="property-card" [property]="property"></app-tab-card>
+  }
+}

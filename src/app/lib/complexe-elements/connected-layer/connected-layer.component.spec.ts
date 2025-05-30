@@ -8,9 +8,8 @@ describe('ConnectedLayerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ConnectedLayerComponent]
-    })
-    .compileComponents();
+      imports: [ConnectedLayerComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ConnectedLayerComponent);
     component = fixture.componentInstance;
