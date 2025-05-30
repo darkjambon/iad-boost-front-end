@@ -28,6 +28,11 @@
             }
           }
         },
+        "server": {
+          "options": {
+            "outputPath": "dist/server"
+          }
+        },
         "serve": {
           "builder": "@analogjs/platform:vite-dev-server",
           "defaultConfiguration": "development",

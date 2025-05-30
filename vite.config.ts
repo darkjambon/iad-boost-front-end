@@ -34,6 +34,10 @@ export default defineConfig(({ mode }) => ({
       vite: { experimental: { supportAnalogFormat: true } },
       nitro: {
         preset: 'vercel',
+        output: {
+          publicDir: 'dist/client',
+          serverDir: 'dist/server',
+        },
       },
     }),
     ClosePlugin(),
